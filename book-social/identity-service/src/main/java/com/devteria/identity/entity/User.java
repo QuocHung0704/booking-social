@@ -1,8 +1,6 @@
 package com.devteria.identity.entity;
 
-import java.time.LocalDate;
 import java.util.Set;
-
 import jakarta.persistence.*;
 
 import lombok.*;
@@ -22,9 +20,6 @@ public class User {
 
     String username;
     String password;
-    String firstName;
-    LocalDate dob;
-    String lastName;
 
     @ManyToMany
     Set<Role> roles;
